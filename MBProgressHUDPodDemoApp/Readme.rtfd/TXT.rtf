@@ -1,0 +1,57 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red155\green44\blue1;\red0\green186\blue251;\red114\green44\blue253;
+\red14\green0\blue45;\red221\green32\blue103;\red74\green0\blue230;\red20\green0\blue65;}
+{\*\expandedcolortbl;;\csgenericrgb\c60784\c17255\c392;\csgenericrgb\c0\c72941\c98431;\csgenericrgb\c44706\c17255\c99216;
+\csgenericrgb\c5490\c0\c17647;\csgenericrgb\c86667\c12549\c40392;\csgenericrgb\c29020\c0\c90196;\csgenericrgb\c7843\c0\c25490;}
+\margl1440\margr1440\vieww15380\viewh8060\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl360\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+
+\fs48                                  \cf2 Integrate CocoaPods
+\fs24 \cf0 \
+\
+
+\fs36 1.First make a Xcode project \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl216\slmult1\pardirnatural\partightenfactor0
+\cf0 \
+2.Add empty file into our Xcode name it let say \'93\cf3 PodFile\cf0 \'94\
+   (
+\i\fs30 Make sure to add pod file associated to top file name \cf3 PodDemoApp\cf0 )\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl360\slmult1\pardirnatural\partightenfactor0
+
+\i0\fs36 \cf0 3.Make a folder out side main folder in which place all our required framework files\
+4. Now open the empty file we created earlier ad fill data as\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0       
+\fs30    \
+          \cf4 use_frameworks!\
+          target \'91\cf3 name of app\cf4 \'92  do\
+          pod \'91\cf3 name of pod entry\cf4 \'92 , \'91~> \cf3 version\cf4 \'92\
+          end\
+          \
+   \cf5 e.g.  use_framework!\cf4 \
+           \cf5 target \'91PodDemoApp\'92 do\
+           pod \'91MBProgressHub\'92, \'91~> 1.0.0\'92\
+           end
+\fs36 \cf4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl360\slmult1\pardirnatural\partightenfactor0
+
+\b\fs28 \cf0 Note:  \cf6 It is not necessary to add version\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl360\slmult1\pardirnatural\partightenfactor0
+
+\b0\fs36 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl216\slmult1\pardirnatural\partightenfactor0
+\cf0 5. Open the terminal and open the directory using command \cf7 $cd \'93\cf3 directory name \cf7 \'94 \
+e.g. :-  $ cd  Desktop/ -> $ cd PodDemoApp/  \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl360\slmult1\pardirnatural\partightenfactor0
+\cf7 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 6. Type \cf4 pod install\cf8  command in the terminal . Let all the process complete to 100%\
+\
+ \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl360\slmult1\pardirnatural\partightenfactor0
+\cf7 \
+                                  }
